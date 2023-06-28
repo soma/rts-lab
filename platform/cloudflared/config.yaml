@@ -6,11 +6,11 @@ no-autoupdate: true
 # For more about ingress rules, see
 # https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/configuration/ingress
 ingress:
-  - hostname: argocd.example.com
+  - hostname: argocd.rts-lab.auctionet.dev
     service: https://argocd-server.argocd.svc
     originRequest:
       noTLSVerify: true
-  - hostname: grafana.example.com
+  - hostname: grafana.rts-lab.auctionet.dev
     service: http://monitoring-grafana.monitoring.svc
   # Applications:
   # - hostname: <application>.example.com
